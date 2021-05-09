@@ -1,0 +1,80 @@
+/* Из страницы сделали флекс контейнер и выровняли по центру */
+body {
+    display: flex;
+    justify-content: center;
+}
+/* Задали высоту, ширину, фон и отступы всем блокам */
+.wrapper {
+    height: 250px;
+    width: 300px;
+    background :rgb(207, 231, 207);
+    margin: 20px;
+}
+/* задали фон элементу с ид */
+#yellow {
+    background-color: yellow;
+}
+/* задали фон элементу блю */
+.blue {
+    background-color: blue;
+}
+/* задали цвент и размер всем тексту внутри блока */
+.wrapper p {
+    color: red;
+    font-size: 30pxs;
+}
+/* задали цвет эдементам строго внутри врепера */
+.wrapper > p {
+    color: black;
+}
+/* задали фон классу ред */
+.red {
+   background-color: red;
+}
+/* сделали прозрачность при наведении для всех блоков */
+.wrapper:hover {
+    opacity: 0.5;
+}
+/* изменили цвет блоку под номером 5 */
+.wrapper:nth-child(5) {
+    background-color: silver;
+}
+
+/* Задали размер первым буквам текста П */
+.wrapper p::first-letter {
+font-size: 80px;
+}
+/* Увеличили высоту 1 блока и оцентрировали его текст */
+.wrapper:first-child {
+    height: 350px;
+    text-align: center;
+}
+/* задали последнему элементу из списка с ид размер */
+#yellow li:last-child {
+    font-size: 50px;
+}
+/* убрали маркеры, выравняли текст по правой границе и сделали отступ */
+#yellow ul {
+    list-style-type: none;
+    text-align:right;
+    margin-right: 10px;
+}
+/* убрали прозрачность у блока с ид и заставили его увеличиваться при наведении */
+#yellow:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+/* Задали время изменения размеря (плавная анимация) */
+#yellow {
+    transition: transform .5s;
+}
+/* оцентрировали текст, сделали отступ и задали размер блоку 5 */
+.wrapper:nth-child(5) {
+text-align:center;
+font-size:50;
+padding-top: 70px;
+}
+/* для 5 блока  изменили цвет 2 строчки */
+.wrapper:nth-child(5) div:nth-child(2) {
+ color: white;   
+}
